@@ -17,8 +17,9 @@
       "ntp_text": [92, 74, 74],
       "ntp_link": [214, 122, 140],
       "ntp_header": [92, 74, 74],
-      "button_background": [255, 196, 208],
-      "control_background": [255, 196, 208],
+      "button_background": [251, 232, 231],
+      "button_background_hover": [248, 220, 222],
+      "control_background": [251, 232, 231],
       "toolbar_button_icon": [140, 120, 120],
       "toolbar_button_icon_hover": [214, 122, 140],
       "omnibox_background": [255, 255, 255],
@@ -38,6 +39,6 @@
     }
   },
   "icons": {
-    "128": "store-assets/icon.png"
+    "128": "icon.png"
   }
 }
