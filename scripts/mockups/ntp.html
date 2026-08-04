@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Rose Morning — New Tab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+  /* ===== Rose Morning theme palette (sourced from theme.json) ===== */
+  :root {
+    --cream:        #FCF5EE;  /* toolbar / ntp background */
+    --blush:        #FBE8E7;  /* frame */
+    --rose:         #FFC4D0;  /* accent / omnibox border */
+    --rose-deep:    #D67A8C;  /* hover / link */
+    --active-tab:   #F7DDDE;  /* active tab */
+    --text:         #5C4A4A;  /* primary text */
+    --sub:          #8C7878;  /* secondary text */
+    --border:       #E6D6D6;
+    --white:        #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1280px;
+    height: 800px;
+    background:
+      radial-gradient(1200px 700px at 50% 30%, #FFF1EE 0%, #FCF3EE 55%, #FAEDE8 100%);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color: var(--text);
+    overflow: hidden;
+  }
+
+  /* ===== Center stack: Google logo + search + shortcut tiles ===== */
+  .ntp {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .google-logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 92px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 36px;
+    user-select: none;
+  }
+  .google-logo .g1 { color: #4285F4; }
+  .google-logo .o1 { color: #EA4335; }
+  .google-logo .o2 { color: #FBBC05; }
+  .google-logo .g2 { color: #4285F4; }
+  .google-logo .l  { color: #34A853; }
+  .google-logo .e  { color: #EA4335; }
+
+  .search {
+    width: 588px;
+    height: 48px;
+    background: var(--white);
+    border: 1px solid #DADCE0;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.08);
+  }
+  .search .icon {
+    width: 18px; height: 18px;
+    color: #5F6368;
+    flex: 0 0 18px;
+  }
+  .search .text {
+    flex: 1;
+    font-size: 15px;
+    color: #202124;
+  }
+  .search .mic {
+    width: 18px; height: 18px;
+    color: #5F6368;
+    flex: 0 0 18px;
+  }
+
+  /* shortcut tiles */
+  .tiles {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    gap: 12px;
+  }
+  .tile {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    background: #F1ECE9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text);
+  }
+  .tile .dot {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--rose);
+  }
+  .tile.add .plus {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: #ECE3E0;
+    color: #5F6368;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 300; line-height: 1;
+  }
+</style>
+</head>
+<body>
+  <div class="ntp">
+    <div class="google-logo">
+      <span class="g1">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+    </div>
+
+    <div class="search" role="search" aria-label="Search">
+      <!-- magnifier icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <div class="text">Search Google or type a URL</div>
+      <!-- mic icon -->
+      <svg class="mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="9" y="2" width="6" height="13" rx="3"></rect>
+        <path d="M5 11a7 7 0 0 0 14 0"></path>
+        <line x1="12" y1="18" x2="12" y2="22"></line>
+      </svg>
+    </div>
+
+    <div class="tiles" aria-label="Shortcuts">
+      <div class="tile"><div class="dot"></div>Site 1</div>
+      <div class="tile"><div class="dot"></div>Site 2</div>
+      <div class="tile"><div class="dot"></div>Site 3</div>
+      <div class="tile"><div class="dot"></div>Site 4</div>
+      <div class="tile add"><div class="plus">+</div>Add</div>
+    </div>
+  </div>
+</body>
+</html>
