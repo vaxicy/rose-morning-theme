@@ -1,0 +1,6 @@
+# Local / sensitive files
+.codebuddy/
+
+# Python cache
+__pycache__/
+*.pyc
