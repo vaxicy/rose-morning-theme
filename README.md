@@ -1,5 +1,9 @@
 # Rose Morning Theme
 
+<p align="center">
+  <img src="store-assets/promo/440x280.png" width="440" alt="Rose Morning Theme promo tile">
+</p>
+
 A gentle and elegant Chrome theme inspired by cream paper, soft rose tones, and warm morning light.
 
 ## Overview
@@ -46,6 +50,8 @@ No images, no wallpapers — a pure color-based theme that stays elegant and rea
 | `manifest.json` | Chrome extension manifest (MV3) |
 | `theme.json` | Standalone theme configuration |
 | `store-assets/icon.png` | Chrome Web Store icon (128x128) |
+| `store-assets/promo/440x280.png` | Small promo tile (Chrome Web Store) |
+| `store-assets/promo/1400x560.png` | Large promo tile (Chrome Web Store) |
 | `store-assets/store-description.txt` | Chrome Web Store listing description |
 
 ## License
