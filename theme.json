@@ -4,9 +4,6 @@
   "name": "Rose Morning Theme",
   "description": "A gentle and elegant Chrome theme with cream paper, soft rose tones, and warm morning light.",
   "theme": {
-    "images": {
-      "theme_frame": ""
-    },
     "colors": {
       "frame": [251, 232, 231],
       "frame_inactive": [252, 240, 238],
