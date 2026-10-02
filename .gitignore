@@ -1,6 +1,13 @@
 # Local / sensitive files
 .codebuddy/
 
+# Build output
+dist/
+*.zip
+
+# Chrome unpacked-theme cache
+Cached Theme.pak
+
 # Python cache
 __pycache__/
 *.pyc
