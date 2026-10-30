@@ -62,11 +62,11 @@ Search for **Rose Morning Theme** in the Chrome Web Store and install it.
 
 ## Preview
 
-![Rose Morning Theme new tab preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-ntp.png)
+![Rose Morning Theme new tab preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-ntp.png?v=2)
 
 *Cream toolbar, blush frame and a light rose active tab around a clean new-tab page.*
 
-![Rose Morning Theme reading preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-reading.png)
+![Rose Morning Theme reading preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-reading.png?v=2)
 
 *The same soft rose window chrome around a calm reading session.*
 
@@ -75,8 +75,7 @@ Search for **Rose Morning Theme** in the Chrome Web Store and install it.
 | File | Description |
 |------|-------------|
 | `manifest.json` | Chrome theme manifest (MV3) with inline `theme` config — single source of truth for every colour |
-| `icon.png` | 128×128 store icon |
-| `icon.png` | Chrome Web Store icon (128x128), referenced by `manifest.json` |
+| `icon.png` | Chrome Web Store icon (128×128), referenced by `manifest.json` |
 | `store-assets/icon.png` | Same 128x128 icon kept alongside the other store assets |
 | `store-assets/screenshots/en/` | Store listing screenshots (1280x800) |
 | `store-assets/promo/` | Promo tiles (440x280 and 1400x560) |
