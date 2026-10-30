@@ -8,7 +8,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Chrome%20Web%20Store-theme-blue?logo=googlechrome" alt="Chrome Web Store">
-  <img src="https://img.shields.io/badge/version-1.0.1-blue" alt="version">
+  <img src="https://img.shields.io/badge/version-1.0.2-blue" alt="version">
   <img src="https://img.shields.io/badge/license-Non--Commercial-lightgrey" alt="license">
 </p>
 
@@ -32,7 +32,7 @@ Rose Morning wraps your browser in a quiet morning room. A soft blush-pink windo
 
 Chrome itself draws a few parts of the window, so they are not controlled by the theme:
 
-- New-tab page keeps Chrome's standard full-colour Google logo, so the installed theme matches the store screenshots.
+- New-tab page Google logo — drawn in a single rose tint (`ntp_logo_alternate: 1`) so it sits inside the palette instead of clashing with it.
 - Search box, microphone and Lens buttons on the new-tab page.
 - Shortcut tiles, which follow your own browsing data.
 - Chrome's own UI such as the star, ⋮ menu and download icons.
@@ -62,11 +62,11 @@ Search for **Rose Morning Theme** in the Chrome Web Store and install it.
 
 ## Preview
 
-![Rose Morning Theme new tab preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-ntp.png?v=2)
+![Rose Morning Theme new tab preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-ntp.png?v=3)
 
 *Cream toolbar, blush frame and a light rose active tab around a clean new-tab page.*
 
-![Rose Morning Theme reading preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-reading.png?v=2)
+![Rose Morning Theme reading preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-reading.png?v=3)
 
 *The same soft rose window chrome around a calm reading session.*
 
