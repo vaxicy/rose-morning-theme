@@ -1,7 +1,6 @@
 """Build the Chrome Web Store upload zip for Rose Morning Theme.
 
-The zip contains only what Chrome needs: manifest.json, icon.png and the
-standalone theme.json. The finished zip is written to dist/ inside the project
+The zip contains only what Chrome needs: manifest.json and icon.png. The finished zip is written to dist/ inside the project
 and copied to the default upload folder next to the project root. All copying
 is done in Python so the non-ASCII project path never passes through a shell
 (the shell would decode it as GBK and silently do nothing).
@@ -18,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 # <vibe coding>/Chrome-themes/<theme> -> the default upload folder is two up
 DEFAULT_OUT = ROOT.parent.parent
-INCLUDE = ["manifest.json", "icon.png", "theme.json"]
+INCLUDE = ["manifest.json", "icon.png"]
 
 
 def main():

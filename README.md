@@ -8,7 +8,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Chrome%20Web%20Store-theme-blue?logo=googlechrome" alt="Chrome Web Store">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version">
+  <img src="https://img.shields.io/badge/version-1.0.1-blue" alt="version">
   <img src="https://img.shields.io/badge/license-Non--Commercial-lightgrey" alt="license">
 </p>
 
@@ -32,7 +32,7 @@ Rose Morning wraps your browser in a quiet morning room. A soft blush-pink windo
 
 Chrome itself draws a few parts of the window, so they are not controlled by the theme:
 
-- New-tab page Google logo — rendered in grey (`ntp_logo_alternate: 1`) so it does not clash with the warm palette.
+- New-tab page keeps Chrome's standard full-colour Google logo, so the installed theme matches the store screenshots.
 - Search box, microphone and Lens buttons on the new-tab page.
 - Shortcut tiles, which follow your own browsing data.
 - Chrome's own UI such as the star, ⋮ menu and download icons.
@@ -75,7 +75,7 @@ Search for **Rose Morning Theme** in the Chrome Web Store and install it.
 | File | Description |
 |------|-------------|
 | `manifest.json` | Chrome theme manifest (MV3) with inline `theme` config — single source of truth for every colour |
-| `theme.json` | Standalone copy of the theme config, kept for reference and re-upload tooling |
+| `icon.png` | 128×128 store icon |
 | `icon.png` | Chrome Web Store icon (128x128), referenced by `manifest.json` |
 | `store-assets/icon.png` | Same 128x128 icon kept alongside the other store assets |
 | `store-assets/screenshots/en/` | Store listing screenshots (1280x800) |
@@ -90,7 +90,7 @@ Search for **Rose Morning Theme** in the Chrome Web Store and install it.
 python3 scripts/package.py
 ```
 
-Writes `dist/rose-morning-theme-<version>.zip` containing only `manifest.json`, `icon.png` and `theme.json`, and copies it to the default upload folder next to the project.
+Writes `dist/rose-morning-theme-<version>.zip` containing only `manifest.json` and `icon.png`, and copies it to the default upload folder next to the project.
 
 ## License
 

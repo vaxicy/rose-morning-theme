@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Rose Morning Theme",
   "description": "A gentle and elegant Chrome theme with cream paper, soft rose tones, and warm morning light.",
   "theme": {
@@ -34,8 +34,7 @@
     },
     "properties": {
       "ntp_background_alignment": "top",
-      "ntp_background_repeat": "no-repeat",
-      "ntp_logo_alternate": 1
+      "ntp_background_repeat": "no-repeat"
     }
   },
   "icons": {
