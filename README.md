@@ -62,11 +62,11 @@ Search for **Rose Morning Theme** in the Chrome Web Store and install it.
 
 ## Preview
 
-![Rose Morning Theme new tab preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-ntp.png?v=3)
+![Rose Morning Theme new tab preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-ntp.png?v=4)
 
 *Cream toolbar, blush frame and a light rose active tab around a clean new-tab page.*
 
-![Rose Morning Theme reading preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-reading.png?v=3)
+![Rose Morning Theme reading preview](https://raw.githubusercontent.com/vaxicy/rose-morning-theme/main/store-assets/screenshots/en/rose-morning-reading.png?v=4)
 
 *The same soft rose window chrome around a calm reading session.*
 
