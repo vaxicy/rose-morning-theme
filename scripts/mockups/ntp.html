@@ -232,14 +232,14 @@
     margin-bottom: 36px;
     user-select: none;
   }
-  /* manifest sets ntp_logo_alternate: 1, so Chrome draws the mark in ONE
-     tint derived from the palette — approximate it with a muted rose */
+  /* manifest sets ntp_logo_alternate: 1, so Chrome draws the mark in ONE tint.
+     Real screenshot (2026-11-02) shows amber #E6AC71, not the full-colour logo. */
   .google-logo .g1,
   .google-logo .o1,
   .google-logo .o2,
   .google-logo .g2,
   .google-logo .l,
-  .google-logo .e { color: #C4808F; }
+  .google-logo .e { color: #E6AC71; }
 
   .search {
     width: 588px;
@@ -269,10 +269,33 @@
     flex: 0 0 18px;
   }
 
+  /* two AI suggestion pills under the search bar — the real 2026 NTP has them,
+     and leaving them out made the screenshot look unlike the installed theme */
+  .ai-row {
+    margin-top: 20px;
+    display: flex;
+    gap: 14px;
+  }
+  .ai-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background: #3C4043;
+    color: #E8EAED;
+    font-size: 13px;
+  }
+  .ai-pill .ico {
+    width: 16px; height: 16px; border-radius: 4px;
+    background: #9AA0A6; opacity: .85;
+  }
+
   /* shortcuts — Chrome renders a circular icon with the label underneath,
      not a filled tile (store review: the old mockup looked unlike the real NTP) */
   .tiles {
-    margin-top: 46px;
+    margin-top: 30px;
     display: flex;
     align-items: flex-start;
     gap: 36px;
@@ -289,7 +312,7 @@
   }
   .tile .dot {
     width: 48px; height: 48px; border-radius: 50%;
-    background: #EBE0DB;
+    background: #EDC49B;                 /* real screenshot: amber disc */
     position: relative;
   }
   .tile .dot::after {
@@ -297,12 +320,12 @@
     position: absolute;
     inset: 13px;
     border-radius: 50%;
-    background: var(--rose);
+    background: #FFF6EC;                 /* favicon placeholder on the amber disc */
   }
   .tile.add .plus {
     width: 48px; height: 48px; border-radius: 50%;
-    background: #EBE0DB;
-    color: #5F6368;
+    background: #EDC49B;
+    color: #4A2E12;
     display: flex; align-items: center; justify-content: center;
     font-size: 24px; font-weight: 300; line-height: 1;
   }
@@ -366,6 +389,11 @@
           <path d="M5 11a7 7 0 0 0 14 0"></path>
           <line x1="12" y1="18" x2="12" y2="22"></line>
         </svg>
+      </div>
+
+      <div class="ai-row" aria-label="AI suggestions">
+        <div class="ai-pill"><span class="ico"></span>Open AI Mode</div>
+        <div class="ai-pill"><span class="ico"></span>Generate images</div>
       </div>
 
       <div class="tiles" aria-label="Shortcuts">
